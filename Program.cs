@@ -5,28 +5,25 @@
         static void Main(string[] args)
         {
         }
-        static long Power(long x, int n)
+        static long Power(long y, int j)
         {
-            if (n == 0)
+            if (j == 0)
             {
                 return 1;
             }
 
-            if (n % 2 == 0)
+            if (j % 2 == 0)
             {
-                var p = Power(x, n / 2);
-                return p * p;
+                var r = Power(y, j / 2);
+                return r * r;
             }
             else
             {
-                return x * Power(x, n - 1);
+                return y * Power(y, j - 1);
             }
         }
-
-
-
     }
 }
 
-    
+
 
