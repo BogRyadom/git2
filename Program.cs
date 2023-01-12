@@ -22,6 +22,12 @@
                 return y * Power(y, j - 1);
             }
         }
+        static int Kub(int a)
+        {
+            int dig = a * a * a;
+
+            return dig;
+        }
     }
 }
 
